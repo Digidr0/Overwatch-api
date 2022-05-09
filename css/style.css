@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "BigNoodleTooOblique";
+  src: url("./font/BIGNOODLETOOOBLIQUE.TTF") format("truetype");
+}
+.none {
+  display: none;
+}
+body {
+  font-family: "BigNoodleTooOblique";
+  /* font-family: "Geometria"; */
+  background-color: rgb(146, 146, 146);
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+  letter-spacing: 0.1em;
+  /* border: 1px solid red; */
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+  font-family: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  margin: 0;
+  height: max-content;
+  width: 500px;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  animation: typing 3s steps(50, start);
+}
+input::placeholder {
+  color: #0000;
+}
+.bg {
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(50px);
+  opacity: 0.5;
+  object-fit: cover;
+}
+.searching {
+  bottom: 0;
+  position: fixed;
+  user-select: none;
+}
+.player {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+h1,
+input,
+label,
+.searching {
+  font-size: 4rem;
+}
+.username {
+  color: white;
+  text-align: right;
+  text-shadow: 5px 5px 0px rgba(255, 255, 255, 0.2);
+}
+.tag,
+label {
+  color: rgb(24, 109, 194);
+  text-shadow: 5px 5px 0px rgba(24, 109, 194, 0.2);
+}
+.info {
+  display: flex;
+  gap: 20px;
+  margin: 50px;
+  margin-left: -200px;
+}
+.portrait {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.frames {
+  display: flex;
+  justify-content: center;
+}
+.frame {
+  height: 100px;
+  width: auto;
+  position: absolute;
+}
+.stars {
+  top: 40px;
+  height: 60px;
+  z-index: 0;
+  position: relative;
+}
+
+table {
+  font-size: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-collapse: collapse;
+}
+th {
+  color: rgb(255, 194, 80);
+
+}
+td,
+th {
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+td{
+  font-weight: 100;
+}

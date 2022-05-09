@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animation.css">
+</head>
+
+<body>
+
+  <img src="./css/images/logo.png" class="bg">
+  <p class="searching none">Searching</p>
+  <div class="player animate pop">
+    <input type="text" class="username" placeholder="Player">
+    <label for="tag">#</label>
+    <input type="number" class="tag" placeholder="1234">
+  </div>
+  <div class="info animate pop">
+    <img src="./css/images/logo.png" alt="portrait" class="portrait">
+    <div class="stats">
+      <h2 class="level">Level: </h2>
+      <h2 class="total-time">Total play time: </h2>
+      <div class="frames">
+        <img src="null" alt="level frame" class="frame none">
+        <img src="null" alt="level stars" class="stars none">
+      </div>
+    </div>
+  </div>
+  <table border="1" class="table animate pop">
+    <tr>
+      <th class="type header">Type</th>
+      <th class="played header">played</th>
+      <th class="won header">Won</th>
+      <th class="lost header">Lost</th>
+      <th class="draw header">Draw</th>
+      <th class="kd header">K/D</th>
+    </tr>
+    <tr>
+      <td class="quickplay header">Quickplay</td>
+      <td class="quickplay played">-</td>
+      <td class="quickplay won">-</td>
+      <td class="quickplay lost">-</td>
+      <td class="quickplay draw">-</td>
+      <td class="quickplay kd">-</td>
+    </tr>
+    <tr>
+      <td class="competitive header">Competitive</td>
+      <td class="competitive played">-</td>
+      <td class="competitive won">-</td>
+      <td class="competitive lost">-</td>
+      <td class="competitive draw">-</td>
+      <td class="competitive kd">-</td>
+    </tr>
+  </table>
+  <script src="api.js"></script>
+</body>
+
+</html>
